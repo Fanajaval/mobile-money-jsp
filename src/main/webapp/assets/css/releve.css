@@ -1,0 +1,139 @@
+/* ===== MAIN ===== */
+
+.main-content{
+    padding:20px;
+}
+
+/* ===== HEADER ===== */
+
+.releve-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.releve-title{
+    font-size:30px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.releve-title i{
+    color:#dc2626;
+}
+
+.releve-subtitle{
+    color:#64748b;
+    margin-top:5px;
+    font-size:14px;
+}
+
+.releve-badge{
+    background:linear-gradient(135deg,#dc2626,#ef4444);
+    color:white;
+    padding:14px 22px;
+    border-radius:16px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(220,38,38,0.18);
+}
+
+/* ===== CARD ===== */
+
+.releve-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    border-radius:24px;
+    padding:35px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 10px 35px rgba(0,0,0,0.05);
+    animation:fadeUp 0.4s ease;
+}
+
+/* ===== FORM ===== */
+
+.releve-form .form-label{
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+    margin-bottom:8px;
+}
+
+.releve-form .form-control,
+.releve-form .form-select{
+    min-height:54px;
+    border-radius:16px;
+    border:1px solid #dbe4ee;
+    background:#f8fafc;
+    padding-left:16px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.releve-form .form-control:focus,
+.releve-form .form-select:focus{
+    background:white;
+    border-color:#dc2626;
+    box-shadow:0 0 0 5px rgba(220,38,38,0.10);
+}
+
+/* ===== BUTTON ===== */
+
+.releve-form .btn{
+    min-height:52px;
+    padding:12px 24px;
+    border:none;
+    border-radius:16px;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.releve-form .btn-danger{
+    background:linear-gradient(135deg,#dc2626,#ef4444);
+    box-shadow:0 8px 20px rgba(220,38,38,0.20);
+}
+
+.releve-form .btn-danger:hover{
+    transform:translateY(-2px);
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .releve-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .releve-card{
+        padding:22px;
+    }
+
+    .releve-title{
+        font-size:24px;
+    }
+
+    .releve-form .btn{
+        width:100%;
+    }
+}
